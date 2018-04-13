@@ -101,32 +101,4 @@ if __name__ == '__main__':
     history_data = [2.874, 3.278, 3.337, 3.390, 3.679]
     index = pd.period_range('2001', '2005', freq='A-DEC')
     GM_Model(history_data, index)
-# # 建立后验残差分析
-# e = 0    # 残差平均值
-# for i in range(0,n):
-#     e += (x0[i]-xx0[i])
-# e /= n
-#
-# # 求历史数据平均值
-# aver = 0
-# for i in range(0,n):
-#     aver += x0[i]
-# aver /= n
-#
-# # 求历史数据方差
-# s12 = 0
-# for i in range(0,n):
-#     s12 += (x0[i]-aver)**2
-# s12 /= n
-#
-#
-# # 求残差方差
-# s22 = 0
-# for i in range(0,n):
-#     s22 += ((x0[i]-xx0[i]) - e)**2
-# s22 /= n
-#
-# # 求后验残差比值
-# C = s22 / s12
-#
-# # 求最小误差概率
+
